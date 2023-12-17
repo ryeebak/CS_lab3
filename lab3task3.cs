@@ -86,5 +86,12 @@ public class lab3task3
         Console.WriteLine($"It's {eur2.Value} EUR");
         CurrencyRUB rub2 = eur2;
         Console.WriteLine($"It's {rub2.Value} RUB");
+        
+        CurrencyRUB rub3 = new CurrencyRUB(200);
+        Console.WriteLine($"We have " + rub3.Value + " rubles");
+        CurrencyEUR eur3 = rub3;
+        Console.WriteLine($"It's {eur3.Value} EUR");
+        CurrencyUSD usd3 = eur3;
+        Console.WriteLine($"It's {usd3.Value} USD");
     }
 }
